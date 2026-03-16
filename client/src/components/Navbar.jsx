@@ -45,11 +45,28 @@ function Navbar({ theme, onToggleTheme }) {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-full border border-slate-200 p-3 text-slate-900 dark:border-white/10 dark:text-white md:hidden"
+          className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 text-slate-900 transition hover:border-brand-400 hover:text-brand-600 dark:border-white/10 dark:text-white dark:hover:border-brand-500/50 dark:hover:text-brand-300 md:hidden"
           onClick={() => setIsOpen((value) => !value)}
           aria-label="Toggle navigation"
+          aria-expanded={isOpen}
         >
-          <span className="block h-0.5 w-5 bg-current" />
+          <span className="relative flex h-4 w-5 flex-col justify-between">
+            <span
+              className={`block h-0.5 w-5 origin-center rounded-full bg-current transition duration-300 ${
+                isOpen ? 'translate-y-[7px] rotate-45' : ''
+              }`}
+            />
+            <span
+              className={`block h-0.5 w-5 rounded-full bg-current transition duration-300 ${
+                isOpen ? 'opacity-0' : 'opacity-100'
+              }`}
+            />
+            <span
+              className={`block h-0.5 w-5 origin-center rounded-full bg-current transition duration-300 ${
+                isOpen ? '-translate-y-[7px] -rotate-45' : ''
+              }`}
+            />
+          </span>
         </button>
       </div>
 
