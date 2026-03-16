@@ -1,6 +1,6 @@
 # Developer Portfolio
 
-A modern portfolio for Burhan Naeem built with React, Vite, TailwindCSS, Framer Motion, Node.js, Express, and PostgreSQL.
+A modern portfolio built with React, Vite, TailwindCSS, Framer Motion, Node.js, Express, and PostgreSQL.
 
 ## Stack
 
