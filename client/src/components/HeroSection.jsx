@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const trustedItems = ['Writeless', 'Waterland', 'Boomerang', 'Nexus.IT', 'SkinSense AI'];
+const trustedItems = ['Writeless', 'Waterland', 'Boomerang', 'Writeless', 'Waterland', 'Boomerang'];
 const processItems = [
   {
     step: '1',
@@ -63,12 +63,21 @@ function HeroSection() {
           <p className="text-center text-2xl font-semibold tracking-tight text-slate-800 dark:text-slate-100 sm:text-4xl">
             Trusted by fast-moving product teams and startup founders
           </p>
-          <div className="mt-10 grid gap-8 text-center sm:grid-cols-2 lg:grid-cols-5">
-            {trustedItems.map((item) => (
-              <div key={item} className="text-2xl font-semibold text-slate-700 dark:text-slate-200">
-                {item}
-              </div>
-            ))}
+          <div className="mt-10 overflow-hidden">
+            <motion.div
+              animate={{ x: ['0%', '-50%'] }}
+              transition={{ duration: 18, repeat: Infinity, ease: 'linear' }}
+              className="flex min-w-max gap-6"
+            >
+              {trustedItems.concat(trustedItems).map((item, index) => (
+                <div
+                  key={`${item}-${index}`}
+                  className="surface-soft min-w-[220px] rounded-2xl px-8 py-6 text-center text-2xl font-semibold text-slate-700 dark:text-slate-200"
+                >
+                  {item}
+                </div>
+              ))}
+            </motion.div>
           </div>
         </div>
       </div>
