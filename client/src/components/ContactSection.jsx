@@ -140,7 +140,7 @@ function ContactSection() {
             <button
               type="submit"
               disabled={status.loading}
-              className="rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-70"
+              className="rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-70"
             >
               {status.loading ? 'Sending...' : 'Send Message'}
             </button>

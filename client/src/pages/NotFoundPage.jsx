@@ -8,7 +8,7 @@ function NotFoundPage() {
       <p className="mt-4 max-w-xl text-slate-600 dark:text-slate-300">The page you were looking for doesn’t exist. Let’s get you back to the portfolio.</p>
       <Link
         to="/"
-        className="mt-8 rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-slate-950"
+        className="mt-8 rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-white"
       >
         Return Home
       </Link>

@@ -33,7 +33,7 @@ function ProjectCard({ project, index }) {
         <div className="mt-auto pt-6 flex items-center gap-4 text-sm font-medium">
           <a
             href={project.liveDemo}
-            className="inline-flex items-center rounded-full bg-brand-500 px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:opacity-90"
+            className="inline-flex items-center rounded-full bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white transition hover:opacity-90"
             target="_blank"
             rel="noreferrer"
           >
