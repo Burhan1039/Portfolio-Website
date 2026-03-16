@@ -1,0 +1,14 @@
+<svg width="800" height="540" viewBox="0 0 800 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="540" rx="32" fill="#06160F"/>
+  <rect x="30" y="30" width="740" height="480" rx="28" fill="#0C1F17" stroke="#1A3A2E"/>
+  <rect x="60" y="60" width="680" height="70" rx="22" fill="#0F2B20"/>
+  <rect x="60" y="156" width="320" height="150" rx="24" fill="#143627"/>
+  <rect x="400" y="156" width="340" height="150" rx="24" fill="#102E22"/>
+  <rect x="60" y="326" width="680" height="144" rx="24" fill="#0E241A"/>
+  <rect x="90" y="88" width="220" height="14" rx="7" fill="#6EE7B7"/>
+  <rect x="90" y="188" width="180" height="16" rx="8" fill="#34D399"/>
+  <rect x="90" y="220" width="244" height="12" rx="6" fill="#4B5563"/>
+  <rect x="430" y="190" width="220" height="60" rx="16" fill="#22C55E" fill-opacity="0.18"/>
+  <path d="M108 420C170 356 210 418 274 388C332 360 380 420 442 392C490 370 544 336 642 364" stroke="#34D399" stroke-width="12" stroke-linecap="round"/>
+  <text x="60" y="496" fill="#DCFCE7" font-family="Sora, sans-serif" font-size="28" font-weight="600">Green UI Screenshot Placeholder</text>
+</svg>

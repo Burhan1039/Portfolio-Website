@@ -1,0 +1,17 @@
+<svg width="800" height="540" viewBox="0 0 800 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="540" rx="32" fill="#07111F"/>
+  <rect x="32" y="32" width="736" height="476" rx="24" fill="#0F172A" stroke="#1E293B"/>
+  <rect x="64" y="68" width="180" height="16" rx="8" fill="#38BDF8" fill-opacity="0.8"/>
+  <rect x="64" y="102" width="300" height="12" rx="6" fill="#334155"/>
+  <rect x="64" y="156" width="280" height="264" rx="18" fill="#111C31"/>
+  <rect x="376" y="156" width="360" height="120" rx="18" fill="#0B2531"/>
+  <rect x="376" y="300" width="168" height="120" rx="18" fill="#131E34"/>
+  <rect x="568" y="300" width="168" height="120" rx="18" fill="#131E34"/>
+  <path d="M100 350C148 320 170 292 220 300C274 310 288 247 334 230" stroke="#22D3EE" stroke-width="12" stroke-linecap="round"/>
+  <path d="M418 230L468 194L520 220L588 172L646 206L704 150" stroke="#34D399" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="704" cy="150" r="12" fill="#34D399"/>
+  <rect x="408" y="318" width="72" height="72" rx="16" fill="#0EA5E9" fill-opacity="0.24"/>
+  <rect x="600" y="324" width="104" height="12" rx="6" fill="#38BDF8" fill-opacity="0.8"/>
+  <rect x="600" y="350" width="84" height="12" rx="6" fill="#334155"/>
+  <text x="64" y="470" fill="#E2E8F0" font-family="Sora, sans-serif" font-size="28" font-weight="600">Project 1 Preview</text>
+</svg>
