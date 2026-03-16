@@ -39,14 +39,8 @@ function Navbar({ theme, onToggleTheme }) {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden md:block">
           <ThemeToggle theme={theme} onToggle={onToggleTheme} />
-          <a
-            href="#contact"
-            className="inline-flex items-center rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90 dark:bg-white dark:text-slate-950"
-          >
-            Get started
-          </a>
         </div>
 
         <button
@@ -73,9 +67,6 @@ function Navbar({ theme, onToggleTheme }) {
               </a>
             ))}
             <ThemeToggle theme={theme} onToggle={onToggleTheme} />
-            <a href="#contact" className="inline-flex w-fit items-center rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white dark:bg-white dark:text-slate-950">
-              Get started
-            </a>
           </div>
         </div>
       )}
