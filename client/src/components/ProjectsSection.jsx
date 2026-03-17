@@ -4,14 +4,15 @@ import { projects } from '../data/projects';
 
 function ProjectsSection() {
   return (
-    <section id="projects" className="py-20 sm:py-24">
+    <section id="projects" className="section-wrap divider">
       <div className="shell">
         <SectionHeading
-          eyebrow="Our Work"
-          title="Selected launches built for speed and clarity."
-          description="A selection of products I have helped design, build, and launch for real businesses."
+          eyebrow="Selected Work"
+          title="Recent launches built for trust and conversion."
+          description="A curated set of client products designed with a premium UX and built with fast, reliable no-code workflows."
         />
-        <div className="mt-12 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
+
+        <div className="mt-12 grid gap-6 lg:grid-cols-3">
           {projects.map((project, index) => (
             <ProjectCard key={project.title} project={project} index={index} />
           ))}

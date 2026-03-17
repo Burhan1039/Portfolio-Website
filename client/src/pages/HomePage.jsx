@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
+import TrustedSection from '../components/TrustedSection';
+import SkillMotionSection from '../components/SkillMotionSection';
+import ServicesSection from '../components/ServicesSection';
 import AboutSection from '../components/AboutSection';
 import ProjectsSection from '../components/ProjectsSection';
 import ReviewsSection from '../components/ReviewsSection';
@@ -8,10 +11,8 @@ import SkillsSection from '../components/SkillsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 import PageLoader from '../components/PageLoader';
-import { useTheme } from '../hooks/useTheme';
 
 function HomePage() {
-  const { theme, toggleTheme } = useTheme();
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -27,10 +28,13 @@ function HomePage() {
   return (
     <div className="min-h-screen bg-transparent">
       <PageLoader isVisible={isLoading} />
-      <Navbar theme={theme} onToggleTheme={toggleTheme} />
+      <Navbar />
       <main>
         <HeroSection />
+        <TrustedSection />
+        <ServicesSection />
         <AboutSection />
+        <SkillMotionSection />
         <ProjectsSection />
         <ReviewsSection />
         <SkillsSection />

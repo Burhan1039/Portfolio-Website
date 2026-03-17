@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,58 +8,77 @@
   color-scheme: dark;
 }
 
-:root.light {
-  color-scheme: light;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-slate-950 text-slate-100 font-sans antialiased transition-colors duration-300;
-  background-image:
-    linear-gradient(180deg, #0b1020 0%, #0d1322 100%);
+  @apply font-sans text-slate-100 antialiased;
+  background: #05181b;
   min-height: 100vh;
-}
-
-body.light {
-  @apply bg-slate-50 text-slate-900;
-  background-image:
-    radial-gradient(circle at top, rgba(255, 240, 181, 0.55), transparent 28%),
-    linear-gradient(180deg, #fffef9 0%, #fbf7ee 100%);
 }
 
 @layer components {
   .shell {
-    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+    @apply mx-auto w-full max-w-[1260px] px-5 sm:px-8 lg:px-12;
+  }
+
+  .section-wrap {
+    @apply py-20 sm:py-24 lg:py-28;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2.5 rounded-full border border-brand-400/35 bg-brand-500/10 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-brand-200;
+  }
+
+  .title-display {
+    @apply font-display text-[2.05rem] font-extrabold leading-[1.05] tracking-tight text-white sm:text-[2.85rem] lg:text-[3.6rem];
+  }
+
+  .copy-muted {
+    @apply text-base leading-8 text-slate-300;
   }
 
   .section-title {
-    @apply font-display text-3xl font-bold tracking-tight sm:text-4xl;
+    @apply text-3xl font-bold tracking-tight text-white sm:text-4xl;
   }
 
-  .section-copy {
-    @apply mt-4 max-w-2xl text-base leading-7 text-slate-300 dark:text-slate-300;
+  .panel {
+    @apply rounded-[1.8rem] border border-white/10 bg-slate-900/55 shadow-card backdrop-blur-xl;
   }
 
-  .body-light .section-copy {
-    @apply text-slate-600;
+  .card {
+    @apply rounded-[1.35rem] border border-white/10 bg-slate-900/60 backdrop-blur-lg;
   }
 
-  .surface-card {
-    @apply border border-slate-200/80 bg-white shadow-sm backdrop-blur dark:border-white/10 dark:bg-slate-900/70;
+  .card-soft {
+    @apply rounded-[1.2rem] border border-white/10 bg-slate-900/45 backdrop-blur;
   }
 
-  .surface-soft {
-    @apply border border-slate-200/80 bg-slate-50 backdrop-blur dark:border-white/10 dark:bg-slate-900/50;
+  .divider {
+    @apply border-t border-white/10;
   }
 
-  .section-shell {
-    @apply relative rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-slate-900/60 sm:p-8 lg:p-10;
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold text-slate-950 transition hover:scale-[1.01] hover:bg-brand-400 hover:shadow-glow;
   }
 
-  .page-divider {
-    @apply border-t border-slate-200/80 dark:border-white/10;
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white transition hover:border-brand-400/70 hover:bg-brand-500/10 hover:text-brand-100;
+  }
+
+  .chip {
+    @apply rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 text-xs font-medium text-slate-200;
+  }
+
+  .light-grid {
+    background-image:
+      linear-gradient(to right, rgba(148, 163, 184, 0.09) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+    background-size: 34px 34px;
+  }
+
+  .blur-orb {
+    @apply absolute rounded-full blur-3xl;
   }
 }

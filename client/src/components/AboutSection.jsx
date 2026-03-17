@@ -1,48 +1,60 @@
 import { motion } from 'framer-motion';
 import SectionHeading from './SectionHeading';
-import { technologies } from '../data/skills';
+import SymbolIcon from './SymbolIcon';
+
+const valueCards = [
+  {
+    title: 'Launch-ready MVPs',
+    text: 'Products scoped with the right priorities and built to be usable from day one.',
+    icon: 'rocket',
+  },
+  {
+    title: 'Structured systems',
+    text: 'Bubble.io and Xano architecture that stays maintainable as your product grows.',
+    icon: 'layers',
+  },
+  {
+    title: 'Smarter operations',
+    text: 'n8n automation and clear workflows that remove manual complexity.',
+    icon: 'workflow',
+  },
+];
 
 function AboutSection() {
   return (
-    <section id="about" className="py-20 sm:py-24">
-      <div className="shell grid gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+    <section id="about" className="section-wrap divider">
+      <div className="shell">
         <SectionHeading
-          eyebrow="About Me"
-          title="Fast product execution for startups and SMBs."
-          description="I’m Burhan Naeem, a Top Rated No-Code / Low-Code Developer and Vibe Coder with 2+ years of experience helping businesses validate ideas, launch MVPs, and scale products faster using Bubble.io, Xano, n8n, Cursor, Codex, and Replit."
+          eyebrow="About"
+          title="Product-focused execution for startups and SMBs."
+          description="I’m Burhan Naeem, a Top Rated No-Code / Low-Code Developer and Vibe Coder helping teams move from idea to launch with Bubble.io, Xano, n8n, Cursor, Codex, and Replit."
         />
 
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.55 }}
-          className="surface-card rounded-[1.75rem] p-8"
-        >
-          <p className="text-base leading-8 text-slate-600 dark:text-slate-300">
-            I specialize in building full-stack applications with Bubble.io and Xano, helping teams move from idea to live product in weeks instead of months. I also use n8n to streamline complex workflows, along with Cursor, Codex, and Replit to move faster, reduce manual effort, and build systems that scale cleanly as products grow.
+        <div className="card mt-8 p-6 sm:p-7">
+          <p className="copy-muted">
+            I specialize in turning early ideas into clean digital products with stable foundations, faster delivery cycles, and workflows that scale without friction.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            {technologies.map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-brand-500/20 bg-brand-500/10 px-4 py-2 text-sm font-medium text-brand-700 dark:text-brand-100"
-              >
-                {item}
+        </div>
+
+        <div className="mt-8 grid gap-5 lg:grid-cols-3">
+          {valueCards.map((item, index) => (
+            <motion.article
+              key={item.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.45, delay: index * 0.07 }}
+              whileHover={{ y: -6 }}
+              className="card flex min-h-[320px] flex-col p-7 transition hover:shadow-glow"
+            >
+              <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-500/15 text-brand-200">
+                <SymbolIcon name={item.icon} className="h-6 w-6" />
               </span>
-            ))}
-          </div>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
-            <div className="surface-soft rounded-2xl p-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-brand-600 dark:text-brand-300">What clients get</p>
-              <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">Fast execution, clear communication, and product decisions shaped around real launch goals.</p>
-            </div>
-            <div className="surface-soft rounded-2xl p-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-brand-600 dark:text-brand-300">How I work</p>
-              <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">Lean builds, structured workflows, and polished frontends that feel trustworthy to end users.</p>
-            </div>
-          </div>
-        </motion.div>
+              <h3 className="mt-6 text-[2rem] font-semibold leading-[1.1] tracking-tight text-white">{item.title}</h3>
+              <p className="mt-5 text-lg leading-8 text-slate-300">{item.text}</p>
+            </motion.article>
+          ))}
+        </div>
       </div>
     </section>
   );

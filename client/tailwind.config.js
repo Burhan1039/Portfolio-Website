@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: 'class',
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
@@ -9,30 +8,39 @@ export default {
           950: '#050816',
         },
         brand: {
-          50: '#fffdf2',
-          100: '#fff9dd',
-          200: '#fff0b5',
-          300: '#ffe48a',
-          400: '#ffd95d',
-          500: '#f7c948',
-          600: '#d9a81e',
-          700: '#b38612',
-          800: '#8f690f',
-          900: '#73550f',
+          50: '#f2fffc',
+          100: '#d9fff7',
+          200: '#b2fff0',
+          300: '#79f7e3',
+          400: '#3ae8cf',
+          500: '#10cdb5',
+          600: '#0ba392',
+          700: '#0c8275',
+          800: '#11685f',
+          900: '#13564f',
         },
         accent: {
-          400: '#fff4bf',
-          500: '#ffe79a',
-          600: '#f3d56b',
+          50: '#fffdf4',
+          100: '#fff6d1',
+          200: '#ffeaa3',
+          300: '#ffdd72',
+          400: '#ffd246',
+          500: '#f5b91f',
+          600: '#d38d14',
+        },
+        ink: {
+          900: '#141221',
+          800: '#232036',
+          700: '#3a3653',
         },
       },
       fontFamily: {
-        sans: ['Sora', 'system-ui', 'sans-serif'],
-        display: ['Space Grotesk', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'Sora', 'system-ui', 'sans-serif'],
+        display: ['Manrope', 'Inter', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        glow: '0 0 0 1px rgba(255,255,255,0.05), 0 18px 50px rgba(247, 201, 72, 0.24)',
-        card: '0 24px 60px rgba(15, 23, 42, 0.18)',
+        glow: '0 0 0 1px rgba(16, 205, 181, 0.1), 0 16px 42px rgba(16, 205, 181, 0.18)',
+        card: '0 22px 60px rgba(20, 18, 33, 0.08)',
       },
       backgroundImage: {
         grid: 'radial-gradient(circle at 1px 1px, rgba(148, 163, 184, 0.18) 1px, transparent 0)',
