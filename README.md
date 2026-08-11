@@ -52,7 +52,7 @@ For Gmail SMTP email delivery, also set these in `server/.env`:
 ```bash
 GMAIL_USER=yourgmail@gmail.com
 GMAIL_APP_PASSWORD=your-16-character-app-password
-CONTACT_TO_EMAIL=burhannaeem09@gmail.com
+CONTACT_TO_EMAIL=burhan@nobleliving.co
 ```
 
 ### 3. Start the apps
