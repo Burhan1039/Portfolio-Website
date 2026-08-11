@@ -8,7 +8,7 @@ const initialState = {
   message: '',
 };
 
-const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/burhannaeem09@gmail.com';
+const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/burhan@nobleliving.co';
 
 function ContactSection() {
   const [formData, setFormData] = useState(initialState);
@@ -79,9 +79,9 @@ function ContactSection() {
               />
 
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                <a href="mailto:burhannaeem09@gmail.com" className="card-soft px-5 py-4">
+                <a href="mailto:burhan@nobleliving.co" className="card-soft px-5 py-4">
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-200">Email</p>
-                  <p className="mt-2 text-sm text-slate-200">burhannaeem09@gmail.com</p>
+                  <p className="mt-2 text-sm text-slate-200">burhan@nobleliving.co</p>
                 </a>
                 <a href="https://www.linkedin.com/in/burhanb72/" target="_blank" rel="noreferrer" className="card-soft px-5 py-4">
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-200">LinkedIn</p>
