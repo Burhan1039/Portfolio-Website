@@ -18,9 +18,9 @@ function Navbar() {
         <div className="panel grid grid-cols-[auto_auto] items-center justify-between gap-4 px-4 py-3 md:grid-cols-[auto_1fr_auto] md:justify-normal">
           <a href="#home" className="flex items-center gap-3 text-white">
             <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-500 text-sm font-bold text-slate-950 shadow-glow">
-              BN
+              NL
             </span>
-            <span className="font-display text-xl font-extrabold tracking-tight">BurhanNaeem.dev</span>
+            <span className="font-display text-xl font-extrabold tracking-tight">Noble Living</span>
           </a>
 
           <nav className="hidden items-center justify-center gap-8 md:flex">
