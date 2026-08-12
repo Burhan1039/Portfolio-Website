@@ -16,7 +16,7 @@ function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    document.title = 'Burhan Naeem | No-Code / Low-Code Developer and Vibe Coder';
+    document.title = 'Noble Living | No-Code / Low-Code Product Studio';
 
     const timer = window.setTimeout(() => {
       setIsLoading(false);
